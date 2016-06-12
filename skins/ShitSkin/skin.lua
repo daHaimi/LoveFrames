@@ -15,9 +15,9 @@ function skin.DrawSlider(object)
     local width = object:GetWidth();
     local height = object:GetHeight();
     
-    love.graphics.setColor(color);
+    love.graphics.setColor({0, 0, 0, 255});
     love.graphics.rectangle("fill", x, y + height/2 - 5, width, 10);
-    love.graphics.setColor(color);
+    love.graphics.setColor({0, 0, 0, 255});
     love.graphics.rectangle("fill", x + 5, y + height/2, width - 10, 1);
 end
 
