@@ -8,7 +8,7 @@ template.name = "ShitTemplate"
 template.properties = {}
 
 template.properties["imagebutton"] = {
-
+   GetHover = function(...) return true; end;
 }
 
 return template;

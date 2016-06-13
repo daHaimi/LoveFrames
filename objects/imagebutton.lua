@@ -141,7 +141,7 @@ function newobject:mousepressed(x, y, button)
 	if not visible then
 		return
 	end
-	self:update(1)
+	
 	local hover = self.hover
 	
 	if hover and button == "l" then
@@ -173,7 +173,7 @@ function newobject:mousereleased(x, y, button)
 	if not visible then
 		return
 	end
-	self:update(1)
+	
 	local hover = self.hover
 	local down = self.down
 	local clickable = self.clickable
