@@ -59,10 +59,10 @@ function skin.DrawImageButton(object)
     local font = love.graphics.newFont("font/8bitOperatorPlus-Regular.ttf", 25);
     local twidth = font:getWidth(object.text);
     local theight = font:getHeight(object.text);
-            
+    
     if image then
         love.graphics.setColor(imagecolor);
-        love.graphics.draw(image, x + 1, y + 1);
+        love.graphics.draw(image, x, y);
     end
     love.graphics.setFont(font);
     love.graphics.setColor(0, 0, 0, 255);

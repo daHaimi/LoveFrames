@@ -1,5 +1,3 @@
-local loveframes = require("lib.Loveframes.libraries.templates");
-
 -- template table
 local template = {}
 
@@ -9,9 +7,8 @@ template.name = "ShitTemplate"
 -- template properties
 template.properties = {}
 
-template.properties["imagebutton"] =
-{
-    hover = true
+template.properties["imagebutton"] = {
+   GetHover = function(...) return true; end;
 }
 
 return template;
