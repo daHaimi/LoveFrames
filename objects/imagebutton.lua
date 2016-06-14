@@ -131,7 +131,7 @@ function newobject:mousepressed(x, y, button)
 
 	local state = loveframes.state
 	local selfstate = self.state
-	
+	self:CheckHover()
 	if state ~= selfstate then
 		return
 	end
@@ -163,7 +163,7 @@ function newobject:mousereleased(x, y, button)
 	
 	local state = loveframes.state
 	local selfstate = self.state
-	
+	self:CheckHover()
 	if state ~= selfstate then
 		return
 	end
