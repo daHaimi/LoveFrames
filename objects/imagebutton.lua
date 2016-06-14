@@ -189,7 +189,8 @@ function newobject:mousereleased(x, y, button)
 	end
 	
 	self.down = false
-
+    self:mousepressed(x, y, button)
+    self:mousereleased(x, y, button)
 end
 
 --[[---------------------------------------------------------
